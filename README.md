@@ -1,2 +1,2 @@
 # IDPA_Vorprojekt
-Marchzinsrechner für das Vorprojekt der IDPA 2024
+Marchzinsrechner für das Vorprojekt der IDPA 2023
