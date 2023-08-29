@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { HelloWorld } from "../app";
 
 test("should greet the world", () => {
