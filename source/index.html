@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>💰 Marchzinsrechner</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <form action="submit">
+            <div>
+                <h3>Kontostand</h3>
+                <input type="number" id="balance" placeholder="Kontostand" />
+                CHF
+            </div>
+            <div>
+                <h3>Bonuszinssatz</h3>
+                <input
+                    type="number"
+                    id="interest"
+                    placeholder="Bonuszinssatz"
+                />
+                %
+            </div>
+            <div>
+                <h3>Geburtstag</h3>
+                <input type="date" id="birthday" placeholder="Geurtstag" />
+            </div>
+            <button id="calculate">Berechnen</button>
+        </form>
+        <div>
+            <section id="total">Resultat</section>
+            <section>CHF</section>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
