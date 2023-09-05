@@ -1,7 +1,3 @@
-export function HelloWorld() {
-    return "Hello World!";
-}
-
 export function onSubmit(event) {
     throw new Error();
 }
