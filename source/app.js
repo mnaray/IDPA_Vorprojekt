@@ -26,6 +26,15 @@ export function readValues() {
 
 export function validate(balance, interest, birthday) {
     // check interest
+    if (isNaN(interest)) {
+        alert("Interest is not a number!");
+        return false;
+    }
+
+    if (interest <= 0) {
+        alert("Interest is negative or 0. No bonus possible.");
+        return false;
+    }
 
     // check balance
     if (isNaN(balance)) {
@@ -49,7 +58,6 @@ export function validate(balance, interest, birthday) {
         return true;
     } catch (err) {
         console.error(err.message);
-        alert("Date is invalid!");
         return false;
     }
 }
