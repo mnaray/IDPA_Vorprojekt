@@ -17,7 +17,7 @@ export function readValues() {
     function parseInputToFloat(inputId) {
         const inputValue = document.getElementById(inputId).value;
         if (isNaN(inputValue)) {
-            throw new Error("Bitte nur Zahlen eingeben!");
+            alert("Please only enter numerical values!");
         }
         const floatValue = parseFloat(inputValue);
         return floatValue;
