@@ -50,6 +50,7 @@ export function validate(balance, interest, birthday) {
     // check date
     try {
         // check if input is in the future
+        // conversion: https://www.scaler.com/topics/convert-string-to-date-javascript/
         if (new Date(birthday) > new Date()) {
             alert("Date is invalid!");
             return false;
