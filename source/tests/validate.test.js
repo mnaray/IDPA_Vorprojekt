@@ -24,8 +24,20 @@ test("should be false for invalid interest value", () => {
     expect(actual).toBe(false);
 });
 
+test("should be false for invalid interest value", () => {
+    const actual = validate(2032, 0, "1999-12-12");
+    expect(typeof actual).toBe("boolean");
+    expect(actual).toBe(false);
+});
+
 test("should be false for invalid balance value", () => {
     const actual = validate(-2032, 2.21, "1999-12-12");
+    expect(typeof actual).toBe("boolean");
+    expect(actual).toBe(false);
+});
+
+test("should be false for 0 balance", () => {
+    const actual = validate(0, 2.21, "1999-12-12");
     expect(typeof actual).toBe("boolean");
     expect(actual).toBe(false);
 });
