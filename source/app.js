@@ -28,6 +28,15 @@ export function validate(balance, interest, birthday) {
     // check interest
 
     // check balance
+    if (isNaN(balance)) {
+        alert("Balance is not a number!");
+        return false;
+    }
+
+    if (balance <= 0) {
+        alert("Balance is negative or 0. No bonus possible.");
+        return false;
+    }
 
     // check date
     try {
