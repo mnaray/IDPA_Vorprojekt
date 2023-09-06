@@ -25,7 +25,24 @@ export function readValues() {
 }
 
 export function validate(balance, interest, birthday) {
-    throw new Error();
+    // check interest
+
+    // check balance
+
+    // check date
+    try {
+        // check if input is in the future
+        if (new Date(birthday) > new Date()) {
+            alert("Date is invalid!");
+            return false;
+        }
+
+        return true;
+    } catch (err) {
+        console.error(err.message);
+        alert("Date is invalid!");
+        return false;
+    }
 }
 
 export function calculate(balance, interest, birthday) {
