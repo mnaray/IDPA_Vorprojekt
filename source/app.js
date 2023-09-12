@@ -1,5 +1,13 @@
 export function onSubmit(event) {
-    throw new Error();
+    event.preventDefault();
+
+    const { balance, interest, date } = readValues();
+
+    if (!validate(balance, interest, date)) return;
+
+    const bonus = calculate(balance, interest, date);
+
+    displayBonus(bonus);
 }
 
 export function readValues() {
@@ -78,3 +86,12 @@ export function calculate(balance, interest, birthday) {
 
     return total;
 }
+
+export function displayBonus(bonus) {
+    const bonusElement = document.getElementById("total");
+
+    // rounding: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed?retiredLocale=de
+    bonusElement.innerText = bonus.toFixed(2);
+}
+
+document.getElementById("calculate").addEventListener("click", onSubmit);
