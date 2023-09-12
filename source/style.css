@@ -1,0 +1,98 @@
+body {
+    width: auto;
+    height: auto;
+    background-color: rgb(158, 181, 199);
+    box-sizing: border-box;
+}
+
+form {
+    width: 30%;
+    height: auto;
+    margin-top: 20%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    left: 30%;
+}
+
+h3{
+    color: black;
+    font-size: larger;
+    text-align: center;
+}
+
+.balanceContainer {
+    width: 30%;
+    height: auto;
+    margin: 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#balance{
+    background-color: #2a3f6c;
+    color: white;
+    font-size: large;
+}
+
+.interestContainer {
+    width: 30%;
+    height: auto;
+    margin: 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#interest{
+    background-color: #2a3f6c;
+    color: white;
+    font-size: large;
+}
+
+.birthdayContainer {
+    width: 30%;
+    height: auto;
+    margin: 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#birthday{
+    background-color: #2a3f6c;
+    color: white;
+    font-size: large;
+}
+
+#calculate {
+    padding: 2% 4%;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #2a3f6c;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px rgb(157, 202, 239);
+    position: relative;
+}
+
+.button:hover {
+    background-color: #2a3f6c;
+}
+
+.button:active {
+    background-color: #2a3f6c;
+    box-shadow: 0 4px rgb(157, 202, 239);
+    transform: translateY(4px);
+}
+
+.result {
+    width: auto;
+    height: auto;
+    margin: 3rem;
+    font-size: large;
+    text-align: center;
+    position: relative;
+}
