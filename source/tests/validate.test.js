@@ -1,4 +1,4 @@
-import { validate } from "../app";
+import { validate } from "../modules/validate";
 
 test("should be true for valid values", () => {
     const actual = validate(2032.5, 2.21, "1999-12-12");

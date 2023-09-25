@@ -1,4 +1,4 @@
-import { calculate } from "../app";
+import { calculate } from "../modules/calculate";
 
 test("should be around 1.6", () => {
     const actual = calculate(1000, 5, "2003-12-12");
